@@ -1,6 +1,6 @@
 ﻿namespace Hardware;
 
-public class Scanner
+public interface IScanner
 {
-
+    public void Scan();
 }
