@@ -18,11 +18,11 @@ public static class UtilityManager{
 
     public static void ShowNames(params object[] names){
         foreach(object name in names){
-            Console.WriteLine(name);
+            Console.WriteLine(name); 
         }
     }
 
-    public static int Division(this MathEngine e,int num1, int num2){
+    public static int Division(this MathEngine e,int num1, int num2){ 
         return num1 / num2;
     }
 
