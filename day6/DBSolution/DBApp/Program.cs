@@ -37,13 +37,13 @@ try{
     connection.Open();
     MySqlDataReader reader = command.ExecuteReader();
 
-    while(reader.Read()){
+    while(reader.Read()){ 
         int? pid = int.Parse(reader["id"].ToString());
         string? pname = reader["name"].ToString();
         string? title = reader["title"].ToString();
         Console.WriteLine(pid + ", "+ pname + ", "+title);
     }
-    reader.Close();
+    reader.Close(); 
     //command.ExecuteNonQuery();
     // int count = int.Parse(command.ExecuteScalar().ToString());
     // Console.WriteLine("count of products :"+count);
