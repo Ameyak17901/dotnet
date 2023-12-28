@@ -34,4 +34,8 @@ public class EmployeesController : Controller
         return View(e);
     }
 
+    public IActionResult DashBoard(){
+        return View();
+    }
+
 }
