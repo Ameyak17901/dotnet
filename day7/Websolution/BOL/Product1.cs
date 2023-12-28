@@ -1,6 +1,6 @@
 namespace BOL;
 
-public class Product
+public class Product1
 {
     private int id;
     private string title;
@@ -12,10 +12,10 @@ public class Product
     private int unitInStock;
 
 
-    public Product(){
+    public Product1(){
     }
 
-    public Product(int productId, string title){
+    public Product1(int productId, string title){
         this.id = productId;
         this.title = title;
         
@@ -36,16 +36,17 @@ public class Product
     //     this.balance = balance;
     // }
 
-    public Product(int productId, string title, string brand, string category,
-                    float unitPrice, 
-                    int balance, string description, string imageURL){
+    public Product1(int productId, string title, string picture, string description,
+                    int unitPrice, 
+                    int available, int CategoryId, int unitInStock){
         this.id = productId;
         this.title = title;   
-        this.category = category;
+        this.picture = picture;
         this.unitPrice = unitPrice;
-        this.balance = balance;
         this.description = description;
-        this.imageURL = imageURL;
+        this.available = available;
+        this.categoryId = categoryId;
+        this.unitInStock = unitInStock;
     }
 
     //Properties of Product Entity
@@ -60,40 +61,33 @@ public class Product
             set { title = value; }
     }
 
-
-    public int CategoryId{
-        get { return categoryId; }
-        set { categoryId = value; }
-    }
-        
-    public string Description{
-        get { return description; }
-        set { description = value; }
-    }
-
-    
-    public int Available{
-        get { return available;}
-        set { available = value; }
-    }
-
-    public int Delivery {
-        get{  return delivery;}
-        set{ delivery = value; }
-    }
-
     public string Picture{
         get  {   return picture; }
         set  { picture = value; }
     }
 
-    public float UnitPrice{
+    public int UnitPrice{
         get  { return unitPrice; }
         set  { unitPrice = value; }
     }
-    
-    public int Balance{
-        get{  return balance; }
-        set{  balance = value;}
-        }
+
+    public string Description{
+        get { return description; }
+        set { description = value; }
+    }
+
+    public int Available{
+        get { return available;}
+        set { available = value; }
+    }
+
+    public int CategoryId{
+        get { return categoryId; }
+        set { categoryId = value; }
+    }
+
+    public int UnitInStock {
+        get{  return unitInStock;}
+        set{ unitInStock = value; }
+    }
 }

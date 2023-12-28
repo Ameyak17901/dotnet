@@ -6,8 +6,8 @@ using System.Collections.Generic;
 public class DBManager{
     public static string connString = "server=localhost;port=3306;user=root;password=welcome;database=ecommerce";
 
-    public static List<Product> GetAllProducts(){
-        List<Product> allProducts = new List<Product>();
+    public static List<Product1> GetAllProducts(){
+        List<Product1> allProducts = new List<Product1>();
         MySqlConnection connection = new MySqlConnection();
         connection.ConnectionString = connString;
         string query = "select * from products";
@@ -28,13 +28,13 @@ public class DBManager{
                 int CategoryId = int.Parse(reader["categoryid"].ToString());
                 int UnitInStock = int.Parse(reader["unitinstock"].ToString());
 
-                Product p = new Product(Id,Title,Picture,Description,UnitPrice,Available,CategoryId,UnitInStock);
+                Product1 p = new Product1(Id,Title,Picture,Description,UnitPrice,Available,CategoryId,UnitInStock);
 
-                allProducts.add(p);
+                allProducts.Add(p);
             }     
 
         }catch(Exception ee){
-            Console.WriteLine(e.Message);
+            Console.WriteLine(ee.Message);
         }finally{
             connection.Close();
         }

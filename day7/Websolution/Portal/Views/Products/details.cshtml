@@ -7,12 +7,12 @@
 <div>
     <h2>Product Details</h2>
     @{
-        Product theProduct=ViewData["product"] as Product;
+        Product1 theProduct=ViewData["product"] as Product1;
         <p> Id: @theProduct.ProductId</p>
         <p> Title:  <b> <u></u>@theProduct.Title</b></p>
         <p> Description: @theProduct.Description</p>
         <p> Unit Price: @theProduct.UnitPrice</p>
-        <p> Stock Available: @theProduct.Balance</p>
+        <p> Stock Available: @theProduct.UnitInStock</p>
 
     }
 </div>

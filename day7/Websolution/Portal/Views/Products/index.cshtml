@@ -6,9 +6,9 @@
 <div>
     <h2>Product Catalog</h2>
     @{
-        List<Product> allProducts= (List<Product>)ViewData["Products"];
+        List<Product1> allProducts= (List<Product1>)ViewData["Products"];
         <ul>
-            @foreach( Product product in allProducts){
+            @foreach( Product1 product in allProducts){
                 <li> <a href="/Products/details/@product.ProductId">@product.Title</a></li>
             }    
         </ul>    

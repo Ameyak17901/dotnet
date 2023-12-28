@@ -24,7 +24,7 @@ public class ProductsController : Controller
     public IActionResult Index()
     {
         CatalogManager manager=new CatalogManager();
-        List<Product> allProducts=manager.GetAllProducts();
+        List<Product1> allProducts=manager.GetAllProducts();
         this.ViewData["products"]=allProducts;
         return View();
     }
@@ -32,7 +32,7 @@ public class ProductsController : Controller
     public IActionResult Details( int id)
     {
       CatalogManager manager=new CatalogManager();
-      Product product=manager.GetProduct(id);
+      Product1 product=manager.GetProduct(id);
       this.ViewData["product"]=product;
       return View();
     }
