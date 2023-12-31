@@ -9,7 +9,11 @@ public class CatalogManager{
         return products;
     }
 
-    // public bool UpdateProductDetails(string Title, string Description, int UnitPrice, int CategoryId, int UnitInStock){
-
-    // }   
+    public bool InsertProducts( string title, string description, int unitPrice, int categoryId, int unitInStock)
+    {
+        return DBManager.InsertProducts(title, description, unitPrice, categoryId, unitInStock);
+    }
+    public bool UpdateProductDetails(int ProductId,string Title, string Description, int UnitPrice, int CategoryId, int UnitInStock){
+        return DBManager.UpdateProductDetails(ProductId,Title,Description,UnitPrice,CategoryId,UnitInStock);
+    }   
 }
