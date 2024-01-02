@@ -34,32 +34,55 @@ while (status)
 
         //Insert new  Department
         case 2:
+
+            Console.WriteLine("Enter the Id:");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Name:");
+            string? name = Console.ReadLine();
+            Console.WriteLine("Enter the Location:");
+            string? location = Console.ReadLine();
             var newDept = new Department()
             {
-                Id = 23,
-                Name = "Research",
-                Location = "Chennai"
-
+                Id = id,
+                Name = name,
+                Location = location
             };
+            // var newDept = new Department()
+            // {
+            //     Id = 23,
+            //     Name = "Research",
+            //     Location = "Chennai"
+
+            // };
             dbm.Insert(newDept);
             break;
 
         // Update existing Department
         case 3:
             {
+                Console.WriteLine("Enter the Id to update:");
+                id = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the name:");
+                name = Console.ReadLine();
+                Console.WriteLine("Enter the location:");
+                location = Console.ReadLine();
                 var updateDepartment = new Department()
                 {
-                    Id = 23,
-                    Name = "Warehouse",
-                    Location = "Mumbai"
+                    Id = id,
+                    Name = name,
+                    Location = location
                 };
+                // var updateDepartment = dbm.GetById(id);
                 dbm.Update(updateDepartment);
             }
             break;
 
         // Delete existing Department
         case 4:
-            dbm.Delete(1);
+            Console.WriteLine("Enter the Department to delete:");
+            id = int.Parse(Console.ReadLine().ToString());
+
+            dbm.Delete(id);
             break;
 
         //Exit from loop

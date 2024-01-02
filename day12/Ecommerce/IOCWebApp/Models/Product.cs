@@ -9,6 +9,6 @@ public class Product
 
     public int UnitPrice { get; set; }
     public bool Available { get; set; }
-    public int CategotyId { get; set; }
+    public int CategoryId { get; set; }
     public int UnitInStock { get; set; }
 }
