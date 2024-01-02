@@ -43,25 +43,28 @@ public class HomeController : Controller
         bool status = CatalogManager.InsertEmployee(id, name, salary, gender);
         if (status)
         {
-            this.RedirectToAction("Employees");
+            return this.RedirectToAction("Employee");
         }
         return View();
     }
 
+    [Route("Home/Edit/{id}")]
     public IActionResult Edit(int id)
     {
+        // Console.WriteLine(id);
         List<Employee> employees = CatalogManager.GetEmployees();
         Employee e = employees.Find((emp) => emp.Id == id);
         return View(e);
     }
     [HttpPost]
-    // [Route("Edit/{@e.id}")]
+    [Route("Home/Edit/{id}")]
     public IActionResult Edit(int id, string name, int salary, string gender)
     {
         // HttpRequest request = new HttpRequest();
         // Request.QueryString("id");
         // Console.WriteLine(id + " " + name);
         bool status = CatalogManager.EditEmployeeDetails(id, name, salary, gender);
+        // Console.WriteLine(status);
         if (status)
         {
             return this.RedirectToAction("Employee");

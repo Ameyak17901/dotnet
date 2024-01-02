@@ -1790,11 +1790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IET\\Desktop\\Websolution\\EmployeePortal\\EmployeePortal.csproj",
+      "projectUniqueName": "C:\\Users\\IET\\Desktop\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj",
       "projectName": "EmployeePortal",
-      "projectPath": "C:\\Users\\IET\\Desktop\\Websolution\\EmployeePortal\\EmployeePortal.csproj",
+      "projectPath": "C:\\Users\\IET\\Desktop\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj",
       "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IET\\Desktop\\Websolution\\EmployeePortal\\obj\\",
+      "outputPath": "C:\\Users\\IET\\Desktop\\dotnet\\Websolution\\EmployeePortal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"
