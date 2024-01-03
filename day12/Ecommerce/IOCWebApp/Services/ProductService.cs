@@ -21,22 +21,22 @@ namespace IOCWebApp.Services
             }
             return null;
         }
-        Product IProductService.GetProductById(int id)
+        public Product GetProductById(int id)
         {
             return _repo.GetProductById(id);
         }
 
-        bool IProductService.Insert(Product product)
+        public bool Insert(Product product)
         {
             return _repo.Insert(product);
         }
 
-        bool IProductService.Update(Product product)
+        public bool Update(Product product)
         {
             return _repo.Update(product);
         }
 
-        bool IProductService.Delete(int id)
+        public bool Delete(int id)
         {
             return _repo.Delete(id);
         }

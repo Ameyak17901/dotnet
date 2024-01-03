@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IOCWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+138b7f5acf8f1100e211c7095d019be9bfb72066")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3069335a7374c1e7bdc1c2dae7effc3dead6ae35")]
 [assembly: System.Reflection.AssemblyProductAttribute("IOCWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IOCWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
