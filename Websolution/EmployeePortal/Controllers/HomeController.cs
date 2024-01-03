@@ -72,7 +72,25 @@ public class HomeController : Controller
         return View();
     }
 
+    // [HttpPost]
+    // [Route("Home/Delete/{id}")]
+    // public IActionResult Delete(int id)
+    // {
+    //     return View(id);
+    // }
 
+    // [HttpPost]
+    [Route("Home/Delete/{id}")]
+    public IActionResult Delete(int id)
+    {
+        // Console.WriteLine(id);
+        bool status = CatalogManager.DeleteEmployee(id);
+        if (status)
+        {
+            return this.RedirectToAction("Employee");
+        }
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
