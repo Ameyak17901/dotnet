@@ -136,5 +136,27 @@ public static class DBManager
         }
         return false;
     }
+    public static bool DeleteEmployee(int id)
+    {
+        MySqlConnection con = new MySqlConnection();
+        con.ConnectionString = constring;
+        string query = "delete from employee where id = @id";
+        MySqlCommand cmd = new MySqlCommand(query,con);
+        try{
+            con.Open();
+            cmd.Parameters.AddWithValue("@id",id);
+            int n = cmd.ExecuteNonQuery();
+            if(n>0){
+                return true;
+            }
+
+        }catch(Exception e){
+            Console.WriteLine(e.Message);
+        }finally{
+            con.Close();
+        }
+        return false;
+
+    }
 
 }
