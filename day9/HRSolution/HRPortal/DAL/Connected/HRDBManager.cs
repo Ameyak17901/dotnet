@@ -3,7 +3,7 @@ using MySql.Data.MySqlClient;
 
 public static class HRDBManager{
 
-    public static string connString = "server=localhost;port=3306;user=root;password=welcome;database=ecommerce";
+    public static string connString = "server=localhost;port=3306;user=root;database=ecommerce";
 
     public static bool ValidateUser(int userid, string password){
         MySqlConnection con = new MySqlConnection();

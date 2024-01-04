@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IET\\Desktop\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj": {}
+    "E:\\CDAC\\dotnet\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IET\\Desktop\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj": {
+    "E:\\CDAC\\dotnet\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IET\\Desktop\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj",
+        "projectUniqueName": "E:\\CDAC\\dotnet\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj",
         "projectName": "EmployeePortal",
-        "projectPath": "C:\\Users\\IET\\Desktop\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj",
-        "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IET\\Desktop\\dotnet\\Websolution\\EmployeePortal\\obj\\",
+        "projectPath": "E:\\CDAC\\dotnet\\dotnet\\Websolution\\EmployeePortal\\EmployeePortal.csproj",
+        "packagesPath": "C:\\Users\\Ameya\\.nuget\\packages\\",
+        "outputPath": "E:\\CDAC\\dotnet\\dotnet\\Websolution\\EmployeePortal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Ameya\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

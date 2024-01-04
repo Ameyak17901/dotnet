@@ -3,7 +3,7 @@ using EmployeePortal.BOL;
 using MySql.Data.MySqlClient;
 public static class DBManager
 {
-    public static string constring = "server=localhost;port=3306;user=root;password=welcome;database=ecommerce";
+    public static string constring = "server=localhost;port=3306;user=root;password=Vaishali@123;database=ecommerce";
 
 
     public static List<Employee> GetEmployees()
@@ -135,6 +135,14 @@ public static class DBManager
             con.Close();
         }
         return false;
+    }
+
+    public static bool DeleteEmployee(int id)
+    {
+        MySqlConnection con = new MySqlConnection();
+        con.ConnectionString = constring;
+        
+
     }
 
 }
