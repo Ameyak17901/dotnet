@@ -28,4 +28,9 @@ public static class CatalogManager
         return DBManager.EditEmployeeDetails(id, name, salary, gender);
     }
 
+    public static bool DeleteEmployee(int id)
+    {
+        return DBManager.DeleteEmployee(id);
+    }
+
 }

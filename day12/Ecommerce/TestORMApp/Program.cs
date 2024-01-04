@@ -15,7 +15,8 @@ while (status)
     Console.WriteLine("2. Insert  new record");
     Console.WriteLine("3. Update existing record");
     Console.WriteLine("4. Delete existing record");
-    Console.WriteLine("5. Exit");
+    Console.WriteLine("5. Get existing record by Id");
+    Console.WriteLine("6. Exit");
 
     switch (int.Parse(Console.ReadLine()))
     {
@@ -84,9 +85,15 @@ while (status)
 
             dbm.Delete(id);
             break;
-
-        //Exit from loop
+        // display department by id
         case 5:
+            Console.WriteLine("Enter the Id");
+            id = int.Parse(Console.ReadLine());
+            newDept = dbm.GetById(id);
+            Console.WriteLine("Id: {0}, Name: {1}, Location: {2}", newDept.Id, newDept.Name, newDept.Location);
+            break;
+        //Exit from loop
+        case 6:
             status = false;
             break;
     }

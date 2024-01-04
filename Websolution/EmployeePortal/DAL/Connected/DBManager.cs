@@ -137,12 +137,4 @@ public static class DBManager
         return false;
     }
 
-    public static bool DeleteEmployee(int id)
-    {
-        MySqlConnection con = new MySqlConnection();
-        con.ConnectionString = constring;
-        
-
-    }
-
 }
